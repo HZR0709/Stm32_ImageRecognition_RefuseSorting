@@ -1,0 +1,2 @@
+# Stm32_ImageRecognition_RefuseSorting
+ 基于stm32的图像识别智能垃圾分类系统设计
