@@ -1,5 +1,6 @@
 # Stm32_ImageRecognition_RefuseSorting
  基于stm32的图像识别智能垃圾分类系统设计
+ 
 双处理器实现，k210作图像处理单元，stm32f103c8t6作核心控制器。
 ## 主要有以下功能：
 ### 智能模式：
