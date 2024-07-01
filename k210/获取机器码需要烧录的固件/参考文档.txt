@@ -1,0 +1,3 @@
+https://en.bbs.sipeed.com/t/topic/2543
+
+下载了该固件，即可通过串口打印出机器码。机器码用于下载maixhub 平台的模型文件

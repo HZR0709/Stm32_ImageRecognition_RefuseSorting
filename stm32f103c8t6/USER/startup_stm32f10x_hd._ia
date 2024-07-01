@@ -1,0 +1,6 @@
+--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"
+-I E:\参考文件\UART串口（测试通过）\UART串口（测试通过）\USER\RTE
+-I "D:\keil arm install\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include"
+-I "D:\keil arm install\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"
+--pd "__UVISION_VERSION SETA 520" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"
+--list ..\listing\startup_stm32f10x_hd.lst --xref -o .\startup_stm32f10x_hd.o --depend .\startup_stm32f10x_hd.d "..\CMSIS\startup\startup_stm32f10x_hd.s"

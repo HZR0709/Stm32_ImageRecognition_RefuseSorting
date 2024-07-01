@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CMSIS -I ..\FWlib\inc -I ..\USER -I ..\SYSTEM\sys -I ..\FWlib\src
+-I E:\参考文件\UART串口（测试通过）\UART串口（测试通过）\USER\RTE
+-I "D:\keil arm install\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include"
+-I "D:\keil arm install\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"
+-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\usart1.o --omf_browse .\usart1.crf --depend .\usart1.d "usart1.c"

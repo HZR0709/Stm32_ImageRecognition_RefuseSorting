@@ -1,0 +1,32 @@
+SET PATH=E:\MDK arm install\ARM\ARMCC\Bin;C:\ProgramData\Oracle\Java\javapath;E:\win avr install\bin;E:\win avr install\utils\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;E:\Program Files
+SET CPU_TYPE=STM32F103C8
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=USART1-DEMO
+SET CPU_CLOCK=0x007A1200
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmAsm" --Via "..\output\startup_stm32f10x_hd._ia"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\main.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_it.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\usart1.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\misc.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_adc.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_gpio.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_rcc.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_usart.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_spi.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_flash.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stm32f10x_tim.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\core_cm3.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\system_stm32f10x.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\sys.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\delay.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\usart2.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\led.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\usart3.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\rc522.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\rc522_add.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\wt588d.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\stmflash.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\adc.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmCC" --Via "..\output\timer.__i"
+"E:\MDK arm install\ARM\ARMCC\Bin\ArmLink" --Via "..\Output\STM32-DEMO.lnp"
+"E:\MDK arm install\ARM\ARMCC\Bin\fromelf.exe" "..\Output\STM32-DEMO.axf" --i32combined --output "..\Output\STM32-DEMO.hex"

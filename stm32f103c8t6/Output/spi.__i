@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CMSIS -I ..\FWlib\inc -I ..\USER -I ..\SYSTEM\sys -I ..\FWlib\src -I ..\HARDWARE\usart2 -I ..\SYSTEM\delay -I ..\HARDWARE\LED -I ..\HARDWARE\usart3 -I ..\HARDWARE\MFRC522 -I ..\HARDWARE\SPI
+-I E:\工作文件\中频治疗仪\中频四路机主机stm32code\USER\RTE
+-I "D:\keil arm install\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include"
+-I "D:\keil arm install\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include"
+-D__UVISION_VERSION="520" -D_RTE_ -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD
+-o ..\output\spi.o --omf_browse ..\output\spi.crf --depend ..\output\spi.d "..\HARDWARE\SPI\spi.c"
